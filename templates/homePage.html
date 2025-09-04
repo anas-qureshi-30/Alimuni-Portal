@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+            box-shadow: 0 10px 15px #0000005a ;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.8rem;
+            text-decoration: none;
+        }
+
+        .navLinks {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .navLinks a {
+            color: #e2e2e2;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.35s;
+        }
+
+        .navLinks a:hover {
+            color: #fff;
+            text-shadow: 0 0 10px #bcbcbcb0;
+        }
+
+        .loginBtn {
+            width: 5rem;
+            height: 2.5rem;
+            border-radius: 50px;
+            border: 0;
+            font-size: 0.9rem;
+            font-weight: 600;
+            padding: 0.5rem 1.5rem;
+            cursor: pointer;
+            transition: 0.2s;
+            text-align: center;
+            background-color: white;
+        }
+
+        .loginBtn:hover {
+            transform: translateY(-2px);
+            background-color: #f6f6f6;
+        }
+
+        main {
+            margin-top: 80px;
+
+        }
+        .hero{
+            padding: 5rem 0;
+            text-align: center;
+        }
+        .welcomeBack {
+            color: #f6f6f6;
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 600px;
+        }
+
+        .welcomeBack h1 {
+            font-size: 3.4rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px rgba(0, 0, 0, 0.655);
+        }
+
+        .welcomeBack p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btns {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            width: 30%;
+            height: 60px;
+            border-radius: 30px;
+            border: 2px solid white;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: #f6f6f6;
+            color: #333;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 25px rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: #f6f6f6;
+        }
+
+        .btn-secondary:hover {
+            background-color: #f6f6f6;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="" class="logo">AlumniConnect</a>
+                <ul class="navLinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <button class="loginBtn">Login</button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="hero">
+                <div class="welcomeBack">
+                    <h1>Welcome Back, Alumni</h1>
+                    <p>Reconnect with classmates, advance your career, and stay connected to your alma mater. Join
+                        thousands
+                        of alumni making a difference worldwide.</p>
+                    <div class="btns">
+                        <button class="btn btn-primary">Join the Network</button>
+                        <button class="btn btn-secondary">Explore Directory</button>
+                    </div>
+                </div>
+            </section>
+            <section class="features">
+                <div class="container">
+
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
